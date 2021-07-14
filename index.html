@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rolando dados</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Rolando dados</h1>
-
-    <script src="dice-roller.js"></script>
+    <h1 class="page__title">Rolando dados</h1>
+    <label id="label" class="input"for="field">Digite quantas vezes você quer jogar os dados que calcularemos quantas vezes ele caiu em cada soma!</br></label>
+    <input id="field" type="number" class="input__field" name="fill field" placeholder="Digite um número de 1 a 1000">
+    <button id="button" type="submit" class="input__button" disabled="disabled">Gerar números</button>
+    <button id="button-reset" type="button" class="input__button" type="submit">Reset</button>
+    <div class="content"> 
+        <ol id="list" class="list" start="2"></ol>
+        <div class="graphic"> <h3>Gráfico</h3>
+        <div class="barra"><p>2</p></div>
+        <div class="barra"><p>3</p></div>
+        <div class="barra"><p>4</p></div>
+        <div class="barra"><p>5</p></div>
+        <div class="barra"><p>6</p></div>
+        <div class="barra"><p>7</p></div>
+        <div class="barra"><p>8</p></div>
+        <div class="barra"><p>9</p></div>
+        <div class="barra"><p>10</p></div>
+        <div class="barra"><p>11</p></div>
+        <div class="barra"><p>12</p></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <img src="https://pa1.narvii.com/7187/9abb762a042d1b003a0096c201db53de0d0469bcr1-540-225_hq.gif" alt="dice-boss-cuphead">
 </body>
 </html>
